@@ -18,15 +18,7 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('State Demo')),
-      body: Center(child: Text('$counter', style: TextStyle(fontSize: 50))),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            counter++;
-          });
-        },
-        child: Icon(Icons.add),
-      ),
+      body: Center(child: Image.asset('assets/images/flutter.png', width: 200)),
     );
   }
 }
